@@ -13,7 +13,7 @@ const isDevPeer = process.env.ENV === 'dev-peer'
 
 const REDIS_URL = isDevelopment || isDevPeer ?
     'redis://127.0.0.1:6379' : // Local REDIS instance
-    'redis://h:pdae6da7e48c32145a69b1cde5a5417da43bc6cd2fc4a58c6a29f59347a970ba9@ec2-18-207-83-208.compute-1.amazonaws.com:21429'; // HEROKU ROOT NODE REDIS (OUTDATED)
+    'redis://cloud.evoledge.de:6379'; //  ROOT NODE REDIS (NON-FUNC)
 
 const DEFAULT_PORT = 3000;
 const ROOT_NODE_ADDRESS = isDevelopment ?
